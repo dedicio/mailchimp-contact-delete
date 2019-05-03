@@ -18,9 +18,9 @@ $site_url = get_bloginfo('url');
 $current_user = wp_get_current_user();
 
 global $wpdb;
-$table_name = $wpdb->prefix . 'ddc_mcd';
-$apikey = get_option('mcd_apikey');
-$user_lists = json_decode(get_option('mcd_users'),TRUE);
+$table_name = $wpdb->prefix . 'ddc_mcu';
+$apikey = get_option('mcu_apikey');
+$user_lists = json_decode(get_option('mcu_users'),TRUE);
 
 
 // Create new instance

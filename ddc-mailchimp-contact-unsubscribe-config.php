@@ -11,17 +11,17 @@ global $wpdb;
 
 if( $_REQUEST['modo'] === 'save' ) :
 
-	if( $_REQUEST['apikey'] ) update_option('mcd_apikey',$_REQUEST['apikey']);
+	if( $_REQUEST['apikey'] ) update_option('mcu_apikey',$_REQUEST['apikey']);
 
-	update_option('mcd_users',json_encode($_POST['user']));
+	update_option('mcu_users',json_encode($_POST['user']));
 
 endif;
 
 $users = get_users();
 
 
-$apikey = get_option('mcd_apikey');
-$user_lists = json_decode(get_option('mcd_users'),TRUE);
+$apikey = get_option('mcu_apikey');
+$user_lists = json_decode(get_option('mcu_users'),TRUE);
 
 
 
