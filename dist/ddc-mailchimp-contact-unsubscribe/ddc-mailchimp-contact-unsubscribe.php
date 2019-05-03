@@ -27,8 +27,8 @@ add_action('admin_menu','remove_menu_mcu');
 
 function register_menu_mcu() {
 	add_menu_page(
-		'Mailchimp Contact Delete',
-		'Mailchimp Contact Delete',
+		'Mailchimp Contact Unsubscribe',
+		'Mailchimp Contact Unsubscribe',
 		'edit_posts',
 		'ddc-mailchimp-contact-unsubscribe/ddc-mailchimp-contact-unsubscribe-list.php',
 		'',
